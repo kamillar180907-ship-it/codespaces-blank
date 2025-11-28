@@ -2,10 +2,150 @@
 <html lang="ru">
 <head>
   <meta charset="UTF-8">
-  <title>Привет мир</title>
+  <title>ДГУ – Дагестанский государственный университет</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <h1>Привет мир</h1>
+  <!-- HEADER -->
+  <header class="header" id="header">
+    <div class="container head-top">
+      <div class="logo">
+        <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='40' height='40'%3E%3Crect width='40' height='40' fill='%23fff'/%3E%3C/svg%3E" alt="DGU">
+        <div>
+          <strong>ДГУ</strong>
+          <span>Дагестанский государственный университет</span>
+        </div>
+      </div>
+
+      <div class="head-contacts">
+        <a href="tel:+78722354000">+7 (8722) 35-40-00</a>
+        <button class="btn small">Поступить</button>
+      </div>
+    </div>
+
+    <!-- NAV -->
+    <nav class="nav" id="nav">
+      <button class="nav-toggle" id="nav-toggle" aria-label="Меню"></button>
+      <ul class="nav-list" id="nav-list">
+        <li><a href="#about">О университете</a></li>
+        <li><a href="#students">Студентам</a></li>
+        <li class="has-sub">
+          <a href="#structure">Структура</a>
+          <ul class="sub-menu">
+            <li><a href="#">Институты</a></li>
+            <li><a href="#">Факультеты</a></li>
+            <li><a href="#">Колледж</a></li>
+          </ul>
+        </li>
+        <li><a href="#science">Наука</a></li>
+        <li><a href="#contacts">Контакты</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- HERO SLIDER -->
+  <section class="hero" id="hero">
+    <div class="swiper" id="hero-slider">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide slide-1">
+          <div class="container">
+            <h1>Дагестанский государственный университет</h1>
+            <p>Более 85 лет создаём будущее региона</p>
+            <a href="#cta" class="btn">Подать документы</a>
+          </div>
+        </div>
+        <div class="swiper-slide slide-2">
+          <div class="container">
+            <h1>Образование мирового уровня</h1>
+            <p>Современные программы и международные стажировки</p>
+            <a href="#programs" class="btn">Выбрать программу</a>
+          </div>
+        </div>
+      </div>
+      <div class="swiper-pagination"></div>
+      <div class="swiper-buttons">
+        <button class="swiper-btn-prev"></button>
+        <button class="swiper-btn-next"></button>
+      </div>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section class="about" id="about">
+    <div class="container">
+      <h2>О нас в цифрах</h2>
+      <div class="nums">
+        <div class="num-item">
+          <strong>14 000+</strong>
+          <span>студентов</span>
+        </div>
+        <div class="num-item">
+          <strong>900+</strong>
+          <span>преподавателей</span>
+        </div>
+        <div class="num-item">
+          <strong>130+</strong>
+          <span>программ</span>
+        </div>
+        <div class="num-item">
+          <strong>12</strong>
+          <span>институтов</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROGRAMS -->
+  <section class="programs" id="programs">
+    <div class="container">
+      <h2>Направления подготовки</h2>
+      <div class="prog-grid">
+        <a href="#" class="prog-card">Педагогика</a>
+        <a href="#" class="prog-card">Медицина</a>
+        <a href="#" class="prog-card">IT &amp; Кибербезопасность</a>
+        <a href="#" class="prog-card">Юриспруденция</a>
+        <a href="#" class="prog-card">Экономика</a>
+        <a href="#" class="prog-card">История</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="cta" id="cta">
+    <div class="container">
+      <h2>Начни учиться в ДГУ</h2>
+      <form class="cta-form" id="cta-form">
+        <input type="text" name="name" placeholder="Имя" required>
+        <input type="tel" name="phone" placeholder="Телефон" required>
+        <button type="submit" class="btn">Отправить заявку</button>
+      </form>
+      <small>Нажимая кнопку, вы соглашаетесь с политикой конфиденциальности</small>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer" id="contacts">
+    <div class="container footer-grid">
+      <div>
+        <strong>ДГУ</strong>
+        <p>367000, Республика Дагестан, г. Махачкала, пр. Гамзатова, 43а</p>
+      </div>
+      <div>
+        <strong>Телефон</strong>
+        <a href="tel:+78722354000">+7 (8722) 35-40-00</a>
+      </div>
+      <div>
+        <strong>E-mail</strong>
+        <a href="mailto:post@dgu.ru">post@dgu.ru</a>
+      </div>
+    </div>
+    <div class="container copy">© 2025 Дагестанский государственный университет</div>
+  </footer>
+
+  <script src="script.js"></script>
 </body>
 </html>
